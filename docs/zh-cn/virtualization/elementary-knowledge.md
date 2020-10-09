@@ -6,9 +6,9 @@
 
 - 计算机资源的抽象
     - 一个物理资源 >> 多个虚拟资源 *通常所说的虚拟机属于这一种*
-    <div align=left><img src="../../_images/virtualization/p2v2.png#pic_center" height="382" width="618""></div>
+    <div align=left><img src="_images/virtualization/p2v2.png#pic_center" height="382" width="618""></div>
     - 多个物理资源 >> 一个虚拟资源
-    <div align=left><img src="../../_images/virtualization/p2v1.png#pic_center" height="382" width="618""></div>
+    <div align=left><img src="_images/virtualization/p2v1.png#pic_center" height="382" width="618""></div>
 - 抽象资源的类型
     - CPU 、内存 、磁盘 、网络 ......
 
