@@ -6,7 +6,7 @@
 
 ?>docker是一个C/S模式的架构，后端是一个松耦合架构，模块各司其职。
 
-<div align=left><img src="../../_images/docker/docker-architecture.jpg#pic_center" height="618" width="582"></div>
+<div align=left><img src="_images/docker/docker-architecture.jpg#pic_center" height="618" width="582"></div>
 
 - 用户是使用`Docker Client`与Docker Daemon建立通信，并发送请求给后者。
 - `Docker Daemon`作为Docker架构中的主体部分，首先提供Server的功能使其可以接受Docker Client的请求；
@@ -20,7 +20,7 @@
 
 ?>容器、镜像、Dockerfile是Docker的三要素，熟练掌握三者之间的转化，即掌握了Docker的基本使用。
 
-<div align=left><img src="../../_images/docker/container-image-dockerfile.jpeg#pic_center" height="382" width="618"></div>
+<div align=left><img src="_images/docker/container-image-dockerfile.jpeg#pic_center" height="382" width="618"></div>
 
 ### Docker Containers
 ?>负责应用程序的`运行`，包括操作系统、用户添加的文件以及元数据。
@@ -28,7 +28,7 @@
 ### Docker Images
 ?>构建容器的`只读模板`，用来运行Docker容器
 
-<div align=left><img src="../../_images/docker/docker-images.jpg#pic_center" height="618" width="618"></div>
+<div align=left><img src="_images/docker/docker-images.jpg#pic_center" height="618" width="618"></div>
 
 ### DockerFile
 ?>文件指令集，用来说明如何创建Docker镜像
@@ -43,10 +43,10 @@
 ### 二、Docker Daemon
 
 #### 2.1 Docker Daemon架构图
-<div align=left><img src="../../_images/docker/docker-daemon.jpg#pic_center" height="610" width="618"></div>
+<div align=left><img src="_images/docker/docker-daemon.jpg#pic_center" height="610" width="618"></div>
 
 #### 2.2 Docker Server 调度分发请求
-<div align=left><img src="../../_images/docker/docker-server.jpg#pic_center" height="610" width="618"></div>
+<div align=left><img src="_images/docker/docker-server.jpg#pic_center" height="610" width="618"></div>
 
 - 运行于主机上，处理服务请求
 - Docker Server相当于C/S架构的服务端。功能为接受并调度分发Docker Client发送的请求。接受请求后，Server通过路由与分发调度，找到相应的Handler来执行请求。
@@ -56,7 +56,7 @@
 
 #### 2.3 Docker Engine 
 
-<div align=left><img src="../../_images/docker/docker-engine-components-flow.png#pic_center" height="382" width="618"></div>
+<div align=left><img src="_images/docker/docker-engine-components-flow.png#pic_center" height="382" width="618"></div>
 
 - Engine是Docker架构中的运行引擎，同时也Docker运行的核心模块。它扮演Docker container存储仓库的角色，并且通过执行job的方式来操纵管理这些容器。
 - 在Engine数据结构的设计与实现过程中，有一个handler对象。该handler对象存储的都是关于众多特定job的handler处理访问。举例说明，Engine的handler对象中有一项为：{“create”: daemon.ContainerCreate,}，则说明当名为"create"的job在运行时，执行的是daemon.ContainerCreate的handler。

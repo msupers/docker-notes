@@ -30,12 +30,12 @@
 - Hypervisor类型-Bare-metal(裸金属)
     - 直接运行在物理`裸机`上，对机器拥有绝对的控制权
     - `非`传统的linux操作系统 *而是根据linux系统改装的操作系统及软件*
-    <div align=left><img src="../../_images/virtualization/virtualization-3.png#pic_center" height="382" width="618""></div>
+    <div align=left><img src="_images/virtualization/virtualization-3.png#pic_center" height="382" width="618""></div>
 - Hypervisor类型-hosted
     - 运行在`宿主机的操作系统`之上
     - 一般为操作系统内核模块
     - 很多虚拟化功能依赖于操作系统本身功能或专门硬件功能
-    <div align=left><img src="../../_images/virtualization/virtualization-4.png#pic_center" height="382" width="618"></div>
+    <div align=left><img src="_images/virtualization/virtualization-4.png#pic_center" height="382" width="618"></div>
 
 ## 硬件虚拟化优缺点
 
@@ -48,7 +48,7 @@
     - 虚拟化栈复杂
     - 软件功能重复
     - `性能损耗`，虚拟机里的硬件，是虚拟出来的，不是直接访问服务器的硬件
-<!-- <div align=left><img src="../../_images/virtualization/virtualization-5.png#pic_center" height="382" width="618"></div> -->
+<!-- <div align=left><img src="_images/virtualization/virtualization-5.png#pic_center" height="382" width="618"></div> -->
 
 ## Linux Container（LXC）
 ?>LXC是Linux内核容器虚拟化的一项技术，可以实现资源的`隔离`和`控制`，也就是对`Cgroup`和`Namespace`两个属性的控制。
@@ -64,7 +64,7 @@
 ## Docker
 ?>`早期`基于`LXC`技术创建的容器引擎，实现`Cgroup`和`Namespace`的`控制` <br/>`现在`使用`libcontainer`(golang的库)实现`Cgroup`和`Namespace`的`控制`，消除了对LXC的依赖。
 
-<div align=left><img src="../../_images/docker/docker-architecture.svg#pic_center" width="70%"></div>
+<div align=left><img src="_images/docker/docker-architecture.svg#pic_center" width="70%"></div>
 
 - 目标
     - `减化`环境管理`复杂度`，减化应用实例部署工作，将应用打成Image部署 *如官网所述：Package Software into Standardized Units for Development, Shipment and Deployment*
@@ -81,7 +81,7 @@
 
 ?>与硬件虚拟化相比，具有性能优势
 
-<div align=left><img src="../../_images/docker/docker-vs-vm-official.png#pic_center" width="70%"></div>
+<div align=left><img src="_images/docker/docker-vs-vm-official.png#pic_center" width="70%"></div>
 
 | 特性 | Docker | 虚拟机 | 
 | :---------- |:------------| :-----------|

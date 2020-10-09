@@ -4,7 +4,7 @@
 - xfs ftype=1  
 
 ## Centos上安装
-<div align=left><img src="../../_images/install/centos-logo.jpg#pic_center" height="382" width="618"></div>
+<div align=left><img src="_images/install/centos-logo.jpg#pic_center" height="382" width="618"></div>
 
 !>**卸载旧版本（前提是通过yum安装过，并且期望卸载时）**
 

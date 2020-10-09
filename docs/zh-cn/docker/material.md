@@ -1,6 +1,6 @@
 # 常用资料
 
-<div align=left><img src="../../_images/docker/docker.jpeg#pic_center" height="382" width="618"></div>
+<div align=left><img src="_images/docker/docker.jpeg#pic_center" height="382" width="618"></div>
 
 ## Docker资料
 
@@ -19,7 +19,7 @@
 
 ?>越来越多软件提供docker的部署方式，使用docker部署，或利用k8s编排docker已成为工具部署的主流。
 
-<div align=left><img src="../../_images/docker/tools-link.jpg#pic_center" height="382" width="618"></div>
+<div align=left><img src="_images/docker/tools-link.jpg#pic_center" height="382" width="618"></div>
 
 ---
 

@@ -16,7 +16,7 @@ docker run -p 8000:80 --name ngx_demo -d nginx
 #       表示让container 运行在后台，不然这个会占据你的命令行窗口
 ```
 
-<div align=left><img src="../../_images/docker/docker-quickstart-nginx.gif#pic_center" height="382" width="618"></div>
+<div align=left><img src="_images/docker/docker-quickstart-nginx.gif#pic_center" height="382" width="618"></div>
 
 ## 启动一个mysql服务
 
@@ -31,5 +31,5 @@ docker run --name some-mysql -p 3306:3306 -v /my/own/datadir:/var/lib/mysql -e M
 ```shell
 mysql -h 127.0.0.1 -u root -p123456    #默认访问主机的3306端口
 ```
-<div align=left><img src="../../_images/docker/docker-quickstart-mysql.gif#pic_center" height="382" width="618"></div>
+<div align=left><img src="_images/docker/docker-quickstart-mysql.gif#pic_center" height="382" width="618"></div>
 
